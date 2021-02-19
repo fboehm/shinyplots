@@ -1,0 +1,14 @@
+---
+title: "Untitled"
+author: "Fred Boehm"
+date: "2/19/2021"
+runtime: shiny
+output: html_document
+---
+
+```{r, echo = FALSE}
+shinyAppDir(
+  ".",
+  options = list(width = "100%", height = 700)
+)
+```
