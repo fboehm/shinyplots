@@ -15,6 +15,7 @@ shinyUI(pageWithSidebar(
     
     textOutput('text1'),
     textOutput('text2'),
-    plotOutput('plot1')
+    plotOutput('plot1'),
+    verbatimTextOutput("test")
   )
 ))

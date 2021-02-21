@@ -15,4 +15,9 @@ shinyServer(function(input, output, session) {
       theme_bw()
     return(g)
   })
+  output$test <- reactivePrint(function(){
+    z <- factor(input$select2)
+    anova(lm(input$select1 ~ z))
+  })
+    
 })
